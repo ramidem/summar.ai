@@ -1,10 +1,12 @@
 import figlet from "figlet";
+import { Elysia } from "elysia";
 
-const server = Bun.serve({
-  port: 3000,
-  fetch(req) {
-    return new Response("Hello, Bun!");
-  },
-});
-
-console.log(figlet.textSync("Summa.ai!"), "\n", `Listening on ${server.port}!`);
+const app = new Elysia()
+  .get("/", () => "Hello Elysia!")
+  .listen(3000, () => {
+    console.log(
+      figlet.textSync("Summa.ai!"),
+      "\n",
+      "Server is running on port 3000"
+    );
+  });

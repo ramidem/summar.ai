@@ -13,6 +13,7 @@
     "dev": "bun --hot src/index.ts"
   },
   "dependencies": {
+    "elysia": "^0.5.22",
     "figlet": "^1.6.0"
   }
 }
