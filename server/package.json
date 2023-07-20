@@ -1,5 +1,5 @@
 {
-  "name": "summar-ai",
+  "name": "summar-ai-server",
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
