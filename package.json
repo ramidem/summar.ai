@@ -3,6 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
+    "@types/figlet": "^1.5.6",
     "bun-types": "latest"
   },
   "peerDependencies": {
@@ -10,5 +11,8 @@
   },
   "scripts": {
     "dev": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "figlet": "^1.6.0"
   }
 }
